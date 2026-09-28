@@ -1,26 +1,75 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Wisanu Mangkala</title>
-    <link rel='stylesheet' href='main.css'>
-    <!-- Tailwind CSS ด้วยวิธี CDN -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- เตั้งค่า google font ใช้กับ tailwind -->
-</head>
-<body class='bg-black'>
-    <div class="w-full flex flex-col items-center justify-center"></div>
-        <div class="flex w-full mt-5 py-5 px-10"></div>
-    
-        
-        <div class='content'>
-            
-            <span class='text-white text-5xl mt-[50px] font-monomaniac'>Wisanu Mangkala</span>
-            <span class='text-green-500 text-5xl mt-[50px] font-monomaniac'>Freelance Web Developer</s>
-            <span class='text-white text-5xl mt-[50px] font-monomaniac'>Based in Thailand</>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              raleway: ["Raleway", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="m-0 p-0 bg-[#91ff82] font-raleway">
+    <!-- ส่วน main -->
+    <div class="flex my-[80px] mx-[120px] justify-center gap-[50px]">
+      <!-- sec-left -->
+      <div>
+        <span class="block text-[5.5rem] font-bold">My Web Design by</span>
+        <span class="block text-[5.5rem] font-bold">HTML+React+TailwindCSS</span>
+        <p class="w-[500px] text-[1.2rem] font-semibold leading-[1.5] my-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+          repudiandae, debitis rerum ut id amet maiores voluptatem tenetur
+          magnam saepe.
+        </p>
+        <button
+          class="bg-[#ff7f50] text-white rounded-[100px] py-[15px] px-[30px] text-[1rem] cursor-pointer"
+        >
+          Follow Me
+        </button>
+        <div class="mt-[40px] flex justify-between">
+          <a href="./page01.html">
+            <img class="w-[500px]" src="./images/pic1.png" alt="pic1" />
+          </a>
+          <a href="./page02.html">
+            <img class="w-[500px]" src="./images/pic2.png" alt="pic2" />
+          </a>
         </div>
-           
-        <a href='page01.html' class="mt-10 w-[400px] h-[250px] rounded-full object-cover object-center mx-auto border-green-500 border-5 button tex-l text-green-500">Learn More About Me</a>
-</body>
+      </div>
+
+      <!-- sec-center -->
+      <div>
+        <a href="./page03.html">
+          <img class="h-[763px]" src="./images/pic3.png" alt="pic3" />
+        </a>
+      </div>
+
+      <!-- sec-right -->
+      <div>
+        <a href="./page04.html">
+          <img class="h-[763px]" src="./images/pic4.png" alt="pic4" />
+        </a>
+      </div>
+    </div>
+
+    <!-- ส่วน footer -->
+    <div class="flex flex-col items-center text-[1.5rem] mb-[100px]">
+      <span>Copyright © 2024 My Web Design by HTML+React+TailwindCSS</span>
+      <span>Created by Wisanu Mangkala</span>
+    </div>
+  </body>
 </html>
